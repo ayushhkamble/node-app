@@ -126,7 +126,7 @@ pipeline {
 
                     kubectl apply -f k8s/
 
-                    kubectl rollout status deployment/node-app
+                    kubectl rollout status deployment/node-app-deployment
 
                     kubectl get deployments
 
