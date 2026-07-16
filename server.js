@@ -308,7 +308,7 @@ font-weight:bold;
 
 <div class="logo">🚀</div>
 
-<h1>CloudBlitz DevOps CI/CD Pipeline</h1>
+<h1>CloudBlitz DevOps CI/CD Pipeline with GitHub Webhook Integration</h1>
 
 <h2>GitHub Webhook Triggered Deployment Successfully</h2>
 
