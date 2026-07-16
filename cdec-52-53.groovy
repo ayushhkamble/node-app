@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        DOCKER_REPO = "mayurwagh"
+        DOCKER_REPO = "ayushkamble820"
         DOCKER_USER = "node-app"
         IMAGE_NAME = "node-app"
         CONTAINER_NAME = "node-container"
@@ -10,7 +10,7 @@ pipeline{
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/mayurmwagh/node-app.git'
+                    url: 'https://github.com/ayushhkamble/node-app.git'
             }
         }
         stage('Verify Environment') {
@@ -81,7 +81,7 @@ pipeline{
                 steps {
           
                     sh '''
-                     sed -i "s|mayurwagh/node-app:latest|${DOCKER_REPO}/${DOCKER_USER}:${BUILD_NUMBER}|g" k8s/deployment.yaml
+                     sed -i "s|ayushkamble820/node-app:latest|${DOCKER_REPO}/${DOCKER_USER}:${BUILD_NUMBER}|g" k8s/deployment.yaml
                     '''
                     sh 'cat k8s/deployment.yaml'
                 }
